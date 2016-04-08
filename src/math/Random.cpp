@@ -1,4 +1,4 @@
-#include "Random.h"
+#include "../../include/math/Random.h"
 
 int ppe_math::GetRandomInt(int lowest, int highest) {
 	std::random_device seed;

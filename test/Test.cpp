@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../src/math/Random.h"
+#include "../include/math/Random.h"
 
 using std::cout;
 using std::endl;

@@ -21,9 +21,15 @@
     <ClCompile Include="src\math\Random.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\core\Pokemon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\math\Random.h">
+    <ClInclude Include="include\math\Random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\Pokemon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -146,11 +146,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\core\Pokemon.cpp" />
     <ClCompile Include="src\math\Random.cpp" />
     <ClCompile Include="test\Test.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\math\Random.h" />
+    <ClInclude Include="include\core\Pokemon.h" />
+    <ClInclude Include="include\math\Random.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
