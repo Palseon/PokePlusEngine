@@ -2,9 +2,9 @@
 
 using namespace ppe_core;
 
-Pokemon::Pokemon(char *name, int level) {
+Pokemon::Pokemon(char *name, PkType type) {
 	this->name = name;
-	this->level = level;
+	this->type = type;
 }
 
 Pokemon::~Pokemon() {
