@@ -20,8 +20,8 @@ Pokemon::~Pokemon() {
 
 string Pokemon::toString() {
 	return ("Name: " + name + "\n"
-		+ "Type: " + to_string(static_cast<int>(GRASS)) + "\n"
-		+ "Nature: " + to_string((PkNature) nature) + "\n"
+		+ "Type: " + to_string(type) + "\n"
+		+ "Nature: " + to_string(nature) + "\n"
 		+ "Health: " + to_string(stats.health_points) + "\n"
 		+ "Level: " + to_string(level) + "\n"
 		+ "Attack: " + to_string(stats.ph_atk) + "\n"
