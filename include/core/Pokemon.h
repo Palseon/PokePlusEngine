@@ -27,7 +27,8 @@ namespace ppe_core {
 			ph_atk,
 			sp_atk,
 			ph_def,
-			sp_def;
+			sp_def,
+			speed;
 	} PkState;
 
 	class Pokemon {
