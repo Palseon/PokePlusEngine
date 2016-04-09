@@ -1,3 +1,4 @@
+#include <iostream>
 #include <fstream>
 
 #include "../../include/core/PokemonManager.h"
@@ -26,7 +27,7 @@ string PokemonManager::ReadData(string file_path) {
 	std::ifstream file(file_path);
 	
 	while (std::getline(file, data)) {
-
+		std::cout << "New Pokemon: " << data << std::endl;
 	}
 
 	return (data);

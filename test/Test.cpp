@@ -1,13 +1,12 @@
 #include <iostream>
-#include "../include/math/Random.h"
+
+#include "../include/PPE.h"
 
 using std::cout;
 using std::endl;
 
 int main() {
-	cout << "Hello PPE!" << endl;
+	cout << "Starting PPE engine!" << endl;
 
-	for (int i = 0; i < 10; ++i) {
-		cout << ppe_math::GetRandomInt(0, 50) << endl;
-	}
+	PpeEngine engine;
 }
