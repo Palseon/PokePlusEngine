@@ -1,8 +1,12 @@
 #include <iostream>
 
+#include "../include/PPE.h"
+
 using std::cout;
 using std::endl;
 
 int main() {
-	cout << "Hello PPE!!" << endl;
+	cout << "Starting PPE!" << endl;
+
+	PpeEngine engine;
 }
