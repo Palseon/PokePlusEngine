@@ -4,6 +4,7 @@
 #include <string>
 
 using std::string;
+using std::to_string;
 
 namespace ppe_core {
 
@@ -22,14 +23,14 @@ namespace ppe_core {
 		CALM, GENTLE, SASSY, CAREFUL, QUIRKY
 	} PkNature;
 
-	typedef struct PkState {
+	typedef struct PkStats {
 		int health_points,
 			ph_atk,
 			sp_atk,
 			ph_def,
 			sp_def,
 			speed;
-	} PkState;
+	} PkStats;
 
 	class Pokemon {
 	public:
@@ -40,9 +41,13 @@ namespace ppe_core {
 	private:
 		string name;
 		int level;
-		PkState state;
+		PkStats stats;
 		PkType type;
 		PkNature nature;
+
+	public:
+		string toString();
+		inline void setStats(PkStats stats) { this->stats = stats; }
 
 	};
 

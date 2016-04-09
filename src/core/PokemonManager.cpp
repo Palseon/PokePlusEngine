@@ -1,53 +1,40 @@
-#include <iostream>
-#include <fstream>
-
 #include "../../include/core/PokemonManager.h"
 
 using namespace ppe_core::management;
 
 PokemonManager::PokemonManager() {
-	pk_registry = new Pokemon[200];
+	pk_registry = new Pokemon*[200];
 }
 
 PokemonManager::~PokemonManager() {
 }
 
 void PokemonManager::RegisterPokemons(char *file_path) {
-	string data = new char[200];
-
-	std::ifstream file(file_path);
+	string data;
+	ifstream file(file_path);
+	int count = 0;
 
 	while (std::getline(file, data)) {
-		std::cout << "New Pokemon: " << data << std::endl;
-		Pokemon *pk = new Pokemon("Test", PkType::ICE);
+
 		string name;
-		string type;
-		PkState state;
+		int type;
+		PkStats stats;
 
-		file >> name >> type >> state.ph_atk >> state.ph_def >> state.sp_atk >> state.sp_def;
+		file >> name
+			 >> type
+			 >> stats.health_points
+			 >> stats.ph_atk
+			 >> stats.ph_def
+			 >> stats.sp_atk
+			 >> stats.sp_def
+			 >> stats.speed;
 
+		Pokemon *pk = new Pokemon(name, (PkType) type);
+		pk->setStats(stats);
+
+		std::cout << pk->toString() << std::endl;
+
+		pk_registry[count] = pk;
+		
 	}
-}
-
-string PokemonManager::ReadData(string file_path) {
-	string data = new char[200];
-	
-	std::ifstream file(file_path);
-	
-	while (std::getline(file, data)) {
-		std::cout << "New Pokemon: " << data << std::endl;
-	}
-
-	return (data);
-}
-
-Pokemon* PokemonManager::ReadPokemon(string line) {
-	Pokemon *pk = new Pokemon("Test", PkType::ICE);
-	string name;
-	//PkType type;
-	//PkState state;
-
-	//line >> name >> type >> state.ph_atk >> state.ph_def >> state.sp_atk >> state.sp_def;
-
-	return (pk);
 }
