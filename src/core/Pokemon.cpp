@@ -2,7 +2,7 @@
 
 using namespace ppe_core;
 
-Pokemon::Pokemon(char *name, PkType type) {
+Pokemon::Pokemon(string name, PkType type) {
 	this->name = name;
 	this->type = type;
 }

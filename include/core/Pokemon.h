@@ -1,16 +1,20 @@
 #ifndef __PPE_POKEMON__
 #define __PPE_POKEMON__
 
+#include <string>
+
+using std::string;
+
 namespace ppe_core {
 
 
-	typedef enum {
+	typedef enum PkType {
 		NORMAL, FIGHT, FLYING, POISON, GROUND, ROCK,
 		BUG, GHOST, STEEL, FIRE, WATER, GRASS,
 		ELECTRIC, PSYCHIC, ICE, DRAGON, DARK, FAIRY
 	} PkType;
 
-	typedef enum {
+	typedef enum PkNature {
 		HARDY, LONELY, BRAVE, ADAMANT, NAUGHTY,
 		BOLD, DOCILE, RELAXED, IMPISH, LAX,
 		TIMID, HASTY, SERIOUS, JOLLY, NAIVE,
@@ -18,7 +22,7 @@ namespace ppe_core {
 		CALM, GENTLE, SASSY, CAREFUL, QUIRKY
 	} PkNature;
 
-	typedef struct {
+	typedef struct PkState {
 		int health_points,
 			ph_atk,
 			sp_atk,
@@ -28,11 +32,11 @@ namespace ppe_core {
 
 	class Pokemon {
 	public:
-		Pokemon(char *name, PkType type);
+		Pokemon(string name, PkType type);
 		~Pokemon();
 
 	private:
-		char *name;
+		string name;
 		int level;
 		PkState state;
 		PkType type;
