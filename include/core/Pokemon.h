@@ -33,6 +33,7 @@ namespace ppe_core {
 
 	class Pokemon {
 	public:
+		Pokemon();
 		Pokemon(string name, PkType type);
 		~Pokemon();
 

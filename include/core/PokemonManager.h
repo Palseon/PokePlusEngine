@@ -18,6 +18,8 @@ namespace ppe_core { namespace management {
 		void RegisterPokemons(char *file_path);
 
 	private:
+		Pokemon *pk_registry;
+
 		string ReadData(string file_path);
 		Pokemon* ReadPokemon(string line);
 	};

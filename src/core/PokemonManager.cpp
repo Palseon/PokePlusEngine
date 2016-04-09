@@ -6,17 +6,25 @@
 using namespace ppe_core::management;
 
 PokemonManager::PokemonManager() {
+	pk_registry = new Pokemon[200];
 }
 
 PokemonManager::~PokemonManager() {
 }
 
 void PokemonManager::RegisterPokemons(char *file_path) {
-	string data = ReadData(file_path);
-	
-	int lines = 1;
+	string data = new char[200];
 
-	for (int i = 0; i < lines; ++i) {
+	std::ifstream file(file_path);
+
+	while (std::getline(file, data)) {
+		std::cout << "New Pokemon: " << data << std::endl;
+		Pokemon *pk = new Pokemon("Test", PkType::ICE);
+		string name;
+		string type;
+		PkState state;
+
+		file >> name >> type >> state.ph_atk >> state.ph_def >> state.sp_atk >> state.sp_def;
 
 	}
 }
@@ -35,6 +43,11 @@ string PokemonManager::ReadData(string file_path) {
 
 Pokemon* PokemonManager::ReadPokemon(string line) {
 	Pokemon *pk = new Pokemon("Test", PkType::ICE);
+	string name;
+	//PkType type;
+	//PkState state;
+
+	//line >> name >> type >> state.ph_atk >> state.ph_def >> state.sp_atk >> state.sp_def;
 
 	return (pk);
 }
