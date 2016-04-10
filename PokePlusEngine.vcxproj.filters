@@ -45,4 +45,11 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\hoenn.ppe" />
+    <None Include="resources\Johto.ppe" />
+    <None Include="resources\Kalos.ppe" />
+    <None Include="resources\kanto.ppe" />
+    <None Include="resources\Teselia.ppe" />
+  </ItemGroup>
 </Project>
