@@ -4,9 +4,9 @@ Grovyle GRASS NONE
 Sceptile GRASS NONE
 Mega.Sceptile GRASS DRAGON
 Torchic FIRE NONE
-Combusken FIRE FIGHTING
-Blaziken FIRE FIGHTING
-Mega.Blaziken FIRE FIGHTING
+Combusken FIRE FIGHT
+Blaziken FIRE FIGHT
+Mega.Blaziken FIRE FIGHT
 Mudkip WATER NONE
 Marshtomp WATER GROUND
 Swampert WATER GROUND
@@ -37,7 +37,7 @@ Mega.Gardevoir PSYCHIC FAIRY
 Surskit BUG WATER
 Maskerain BUG FLYING
 Shroomish GRASS NONE
-Breloom GRASS FIGHTING
+Breloom GRASS FIGHT
 Slakoth NORMAL NONE
 Vigoroth NORMAL NONE
 Slaking NORMAL NONE
@@ -47,8 +47,8 @@ Shedinja BUG GHOST
 Whismur NORMAL NONE
 Loudred NORMAL NONE
 Exploud NORMAL NONE
-Makuhita FIGHTING NONE
-Hariyama FIGHTING NONE
+Makuhita FIGHT NONE
+Hariyama FIGHT NONE
 Azurill NORMAL FAIRY
 Nosepass ROCK NONE
 Skitty NORMAL NONE
@@ -61,9 +61,9 @@ Aron STEEL ROCK
 Lairon STEEL ROCK
 Aggron STEEL ROCK
 Mega.Aggron STEEL ROCK
-Meditite FIGHTING PSYCHIC
-Medicham FIGHTING PSYCHIC
-Mega.Medicham FIGHTING PSYCHIC
+Meditite FIGHT PSYCHIC
+Medicham FIGHT PSYCHIC
+Mega.Medicham FIGHT PSYCHIC
 Electrike ELECTRIC NONE
 Manectric ELECTRIC NONE
 Mega.Manectric ELECTRIC NONE
