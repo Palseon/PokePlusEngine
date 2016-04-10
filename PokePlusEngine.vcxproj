@@ -163,6 +163,7 @@
     <None Include="resources\Johto.ppe" />
     <None Include="resources\Kalos.ppe" />
     <None Include="resources\Kanto.ppe" />
+    <None Include="resources\Sinnoh.ppe" />
     <None Include="resources\Teselia.ppe" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

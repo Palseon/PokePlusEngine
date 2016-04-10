@@ -51,5 +51,6 @@
     <None Include="resources\Teselia.ppe" />
     <None Include="resources\Hoenn.ppe" />
     <None Include="resources\Kanto.ppe" />
+    <None Include="resources\Sinnoh.ppe" />
   </ItemGroup>
 </Project>
