@@ -46,10 +46,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="resources\hoenn.ppe" />
     <None Include="resources\Johto.ppe" />
     <None Include="resources\Kalos.ppe" />
-    <None Include="resources\kanto.ppe" />
     <None Include="resources\Teselia.ppe" />
+    <None Include="resources\Hoenn.ppe" />
+    <None Include="resources\Kanto.ppe" />
   </ItemGroup>
 </Project>

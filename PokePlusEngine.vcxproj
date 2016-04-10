@@ -159,10 +159,10 @@
     <ClInclude Include="include\PPE.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="resources\hoenn.ppe" />
+    <None Include="resources\Hoenn.ppe" />
     <None Include="resources\Johto.ppe" />
     <None Include="resources\Kalos.ppe" />
-    <None Include="resources\kanto.ppe" />
+    <None Include="resources\Kanto.ppe" />
     <None Include="resources\Teselia.ppe" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
