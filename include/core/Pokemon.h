@@ -10,6 +10,7 @@ namespace ppe_core {
 
 
 	typedef enum PkType {
+		NONE,
 		NORMAL, FIGHT, FLYING, POISON, GROUND, ROCK,
 		BUG, GHOST, STEEL, FIRE, WATER, GRASS,
 		ELECTRIC, PSYCHIC, ICE, DRAGON, DARK, FAIRY
@@ -35,14 +36,14 @@ namespace ppe_core {
 	class Pokemon {
 	public:
 		Pokemon();
-		Pokemon(string name, PkType type);
+		Pokemon(string name, PkType type1, PkType type2);
 		~Pokemon();
 
 	private:
 		string name;
 		int level;
 		PkStats stats;
-		PkType type;
+		PkType type1, type2;
 		PkNature nature;
 
 	public:

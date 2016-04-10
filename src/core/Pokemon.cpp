@@ -5,12 +5,13 @@ using namespace ppe_core;
 using ppe_math::GetRandomInt;
 
 Pokemon::Pokemon() {
-	Pokemon::Pokemon("MISSINGNO", PkType::NORMAL);
+	Pokemon::Pokemon("MISSINGNO", PkType::NORMAL, PkType::NONE);
 }
 
-Pokemon::Pokemon(string name, PkType type) {
+Pokemon::Pokemon(string name, PkType type1, PkType type2) {
 	this->name = name;
-	this->type = type;
+	this->type1 = type1;
+	this->type2 = type2;
 	this->level = 0;
 	this->nature = (PkNature) GetRandomInt(0, 24);
 }
@@ -19,14 +20,15 @@ Pokemon::~Pokemon() {
 }
 
 string Pokemon::toString() {
-	return ("Name: " + name + "\n"
-		+ "Type: " + to_string(type) + "\n"
-		+ "Nature: " + to_string(nature) + "\n"
-		+ "Health: " + to_string(stats.health_points) + "\n"
-		+ "Level: " + to_string(level) + "\n"
-		+ "Attack: " + to_string(stats.ph_atk) + "\n"
-		+ "Sp. Attack: " + to_string(stats.sp_atk) + "\n"
-		+ "Defense: " + to_string(stats.ph_def) + "\n"
-		+ "Sp. Defense: " + to_string(stats.sp_def) + "\n"
-		+ "Speed: " + to_string(stats.speed) + "\n");
+	return ("Name: " + name + "|"
+		+ "Type 1: " + to_string(type1) + "|"
+		+ "Type 2: " + to_string(type2) + "|"
+		+ "Nature: " + to_string(nature) + "|"
+		+ "Health: " + to_string(stats.health_points) + "|"
+		+ "Level: " + to_string(level) + "|"
+		+ "Attack: " + to_string(stats.ph_atk) + "|"
+		+ "Sp. Attack: " + to_string(stats.sp_atk) + "|"
+		+ "Defense: " + to_string(stats.ph_def) + "|"
+		+ "Sp. Defense: " + to_string(stats.sp_def) + "|"
+		+ "Speed: " + to_string(stats.speed) + "|");
 }

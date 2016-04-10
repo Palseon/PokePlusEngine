@@ -22,7 +22,10 @@ namespace ppe_core { namespace management {
 		void RegisterPokemons(char *file_path);
 
 	private:
+		int pk_count;
 		Pokemon **pk_registry;
+
+		PkType ParseType(string type);
 
 	};
 
