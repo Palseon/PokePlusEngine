@@ -7,7 +7,7 @@ using ppe_core::management::PokemonManager;
 PpeEngine::PpeEngine() {
 	PokemonManager pkmanager;
 	//pkmanager.RegisterPokemons("resources/pokemon_data.ppe");
-	pkmanager.RegisterPokemons("resources/Johto.ppe");
+	pkmanager.RegisterPokemons("resources/kanto.ppe");
 }
 
 PpeEngine::~PpeEngine() {
