@@ -45,7 +45,7 @@ void PokemonManager::RegisterPokemons(char *file_path) {
 PkType ppe_core::management::PokemonManager::ParseType(string type) {
 	if (type == "NONE") return PkType::NONE;
 	if (type == "NORMAL") return PkType::NORMAL;
-	if (type == "FIGHT") return PkType::FIGHT;
+	if (type == "FIGHTING") return PkType::FIGHTING;
 	if (type == "FLYING") return PkType::FLYING;
 	if (type == "POISON") return PkType::POISON;
 	if (type == "GROUND") return PkType::GROUND;
