@@ -6,7 +6,8 @@
 
 using std::ifstream;
 
-using ppe::PkType;
+using ppe::core::PkType;
+using ppe::core::PkStats;
 using ppe::management::PokemonManager;
 
 

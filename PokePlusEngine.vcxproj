@@ -146,6 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\character\Character.cpp" />
     <ClCompile Include="src\core\Pokemon.cpp" />
     <ClCompile Include="src\core\PokemonManager.cpp" />
     <ClCompile Include="src\math\Random.cpp" />
@@ -153,6 +154,7 @@
     <ClCompile Include="test\Test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\character\Character.h" />
     <ClInclude Include="include\core\Pokemon.h" />
     <ClInclude Include="include\core\PokemonManager.h" />
     <ClInclude Include="include\math\Random.h" />

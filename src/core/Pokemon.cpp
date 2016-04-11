@@ -1,9 +1,9 @@
 #include "../../include/core/Pokemon.h"
 #include "../../include/math/Random.h"
 
-using ppe::Pokemon;
-using ppe::PkType;
-using ppe::PkNature;
+using ppe::core::Pokemon;
+using ppe::core::PkType;
+using ppe::core::PkNature;
 
 using ppe_math::GetRandomInt;
 
@@ -15,6 +15,14 @@ Pokemon::Pokemon(string name, PkType type1, PkType type2) {
 	this->name = name;
 	this->type1 = type1;
 	this->type2 = type2;
+	//this->level = 0;
+	//this->nature = (PkNature) GetRandomInt(0, 24);
+}
+
+Pokemon::Pokemon(Pokemon *orig) {
+	this->name = orig->name;
+	this->type1 = orig->type1;
+	this->type2 = orig->type2;
 	this->level = 0;
 	this->nature = (PkNature) GetRandomInt(0, 24);
 }

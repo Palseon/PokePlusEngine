@@ -7,7 +7,8 @@
 
 using std::string;
 
-using ppe::Pokemon;
+using ppe::core::Pokemon;
+using ppe::core::PkType;
 
 
 namespace ppe { namespace management {

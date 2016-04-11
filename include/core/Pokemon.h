@@ -7,7 +7,7 @@ using std::string;
 using std::to_string;
 
 
-namespace ppe {
+namespace ppe { namespace core {
 
 	typedef enum PkType {
 		NONE,
@@ -37,6 +37,7 @@ namespace ppe {
 	public:
 		Pokemon();
 		Pokemon(string name, PkType type1, PkType type2);
+		Pokemon(Pokemon *orig);
 		~Pokemon();
 
 	private:
@@ -52,7 +53,7 @@ namespace ppe {
 
 	};
 
-}
+} }
 
 #endif
 

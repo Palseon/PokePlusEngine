@@ -4,7 +4,7 @@
 #include "../include/core/Pokemon.h"
 #include "../include/core/PokemonManager.h"
 
-using ppe::Pokemon;
+using ppe::core::Pokemon;
 using ppe::management::PokemonManager;
 
 namespace ppe {
