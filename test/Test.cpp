@@ -24,7 +24,7 @@ int main() {
 	cout << "Enter Pokemon ID: ";
 	cin >> id;
 
-	while (id != -1 || id < count) {
+	while (id >= 0 && id < count) {
 		cout << engine->getPokemonManager()->getPokemonFromID(id)->toString() << endl;
 		
 		cout << "Enter Pokemon ID: ";
