@@ -1,14 +1,26 @@
-#ifndef __PPE_ENGINE__
-#define __PPE_ENGINE__
+#ifndef __PPE__
+#define __PPE__
 
-class PpeEngine
-{
-public:
-	PpeEngine();
-	~PpeEngine();
+#include "../include/core/Pokemon.h"
+#include "../include/core/PokemonManager.h"
 
-private:
+using ppe::Pokemon;
+using ppe::management::PokemonManager;
 
-};
+namespace ppe {
+
+	class PPE {
+	public:
+		PPE();
+		~PPE();
+
+		inline PokemonManager* getPokemonManager() { return pkmanager; }
+
+	private:
+		PokemonManager *pkmanager;
+
+	};
+
+}
 
 #endif

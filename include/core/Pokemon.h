@@ -6,8 +6,8 @@
 using std::string;
 using std::to_string;
 
-namespace ppe_core {
 
+namespace ppe {
 
 	typedef enum PkType {
 		NONE,

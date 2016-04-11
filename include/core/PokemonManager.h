@@ -1,18 +1,16 @@
 #ifndef __PPE_PKMANAGER__
 #define __PPE_PKMANAGER__
 
-#include <iostream>
-#include <fstream>
 #include <string>
 
 #include "Pokemon.h"
 
-using std::ifstream;
 using std::string;
 
-using ppe_core::Pokemon;
+using ppe::Pokemon;
 
-namespace ppe_core { namespace management {
+
+namespace ppe { namespace management {
 
 	class PokemonManager {
 	public:
@@ -20,6 +18,11 @@ namespace ppe_core { namespace management {
 		~PokemonManager();
 
 		void RegisterPokemons(char *file_path);
+
+		inline Pokemon** getPokemonRegistry() { return pk_registry; }
+		inline Pokemon* getPokemonFromID(int id) { return pk_registry[id]; }
+
+		inline int getPokemonCount() { return pk_count; }
 
 	private:
 		int pk_count;
@@ -29,6 +32,6 @@ namespace ppe_core { namespace management {
 
 	};
 
-}}
+} }
 
 #endif

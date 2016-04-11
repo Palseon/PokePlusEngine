@@ -1,7 +1,10 @@
 #include "../../include/core/Pokemon.h"
 #include "../../include/math/Random.h"
 
-using namespace ppe_core;
+using ppe::Pokemon;
+using ppe::PkType;
+using ppe::PkNature;
+
 using ppe_math::GetRandomInt;
 
 Pokemon::Pokemon() {

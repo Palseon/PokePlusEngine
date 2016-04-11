@@ -1,8 +1,14 @@
+#include <iostream>
+#include <fstream>
+
 #include "../../include/core/PokemonManager.h"
 #include "../../include/core/Pokemon.h"
 
-using namespace ppe_core::management;
-using ppe_core::PkType;
+using std::ifstream;
+
+using ppe::PkType;
+using ppe::management::PokemonManager;
+
 
 PokemonManager::PokemonManager() {
 	pk_count = 0;
@@ -10,6 +16,10 @@ PokemonManager::PokemonManager() {
 }
 
 PokemonManager::~PokemonManager() {
+	for (int i = 0; i < pk_count; i++) {
+		delete pk_registry[i];
+	}
+	delete [] pk_registry;
 }
 
 void PokemonManager::RegisterPokemons(char *file_path) {
@@ -35,14 +45,14 @@ void PokemonManager::RegisterPokemons(char *file_path) {
 		Pokemon *pk = new Pokemon(name, ParseType(type1), ParseType(type2));
 		pk->setStats(stats);
 
-		std::cout << pk->toString() << std::endl;
+		//std::cout << pk->toString() << std::endl;
 
 		pk_registry[pk_count++] = pk;
 		
 	}
 }
 
-PkType ppe_core::management::PokemonManager::ParseType(string type) {
+PkType PokemonManager::ParseType(string type) {
 	if (type == "NONE") return PkType::NONE;
 	if (type == "NORMAL") return PkType::NORMAL;
 	if (type == "FIGHTING") return PkType::FIGHTING;

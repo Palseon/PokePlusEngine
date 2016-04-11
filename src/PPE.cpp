@@ -3,31 +3,32 @@
 
 #include "../include/core/PokemonManager.h"
 
-using ppe_core::management::PokemonManager;
+using ppe::PPE;
+using ppe::management::PokemonManager;
 
-PpeEngine::PpeEngine() {
-	PokemonManager pkmanager;
-	//pkmanager.RegisterPokemons("resources/pokemon_data.ppe");
+PPE::PPE() {
 
-	pkmanager.RegisterPokemons("resources/Kanto.ppe");
+	pkmanager = new PokemonManager;
+
+	pkmanager->RegisterPokemons("resources/Kanto.ppe");
 	std::cout << std::endl;
 
-	pkmanager.RegisterPokemons("resources/Johto.ppe");
+	pkmanager->RegisterPokemons("resources/Johto.ppe");
 	std::cout << std::endl;
 
-	pkmanager.RegisterPokemons("resources/Hoenn.ppe");
+	pkmanager->RegisterPokemons("resources/Hoenn.ppe");
 	std::cout << std::endl;
 
-	pkmanager.RegisterPokemons("resources/Sinnoh.ppe");
+	pkmanager->RegisterPokemons("resources/Sinnoh.ppe");
 	std::cout << std::endl;
 
-	pkmanager.RegisterPokemons("resources/Teselia.ppe");
+	pkmanager->RegisterPokemons("resources/Teselia.ppe");
 	std::cout << std::endl;
 
-	pkmanager.RegisterPokemons("resources/Kalos.ppe");
+	pkmanager->RegisterPokemons("resources/Kalos.ppe");
 	std::cout << std::endl;
 	
 }
 
-PpeEngine::~PpeEngine() {
+PPE::~PPE() {
 }
