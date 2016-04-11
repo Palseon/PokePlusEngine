@@ -18,6 +18,9 @@ PpeEngine::PpeEngine() {
 	pkmanager.RegisterPokemons("resources/Hoenn.ppe");
 	std::cout << std::endl;
 
+	pkmanager.RegisterPokemons("resources/Sinnoh.ppe");
+	std::cout << std::endl;
+
 	pkmanager.RegisterPokemons("resources/Teselia.ppe");
 	std::cout << std::endl;
 
