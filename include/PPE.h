@@ -4,8 +4,6 @@
 #include "../include/core/Pokemon.h"
 #include "../include/core/PokemonManager.h"
 
-using ppe::core::Pokemon;
-using ppe::management::PokemonManager;
 
 namespace ppe {
 
@@ -14,10 +12,10 @@ namespace ppe {
 		PPE();
 		~PPE();
 
-		inline PokemonManager* getPokemonManager() { return pkmanager; }
+		inline ppe::management::PokemonManager* getPokemonManager() { return pkmanager; }
 
 	private:
-		PokemonManager *pkmanager;
+		ppe::management::PokemonManager *pkmanager;
 
 	};
 

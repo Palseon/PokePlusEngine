@@ -3,9 +3,6 @@
 
 #include <string>
 
-using std::string;
-using std::to_string;
-
 
 namespace ppe { namespace core {
 
@@ -36,19 +33,19 @@ namespace ppe { namespace core {
 	class Pokemon {
 	public:
 		Pokemon();
-		Pokemon(string name, PkType type1, PkType type2);
+		Pokemon(std::string name, PkType type1, PkType type2);
 		Pokemon(Pokemon *orig);
 		~Pokemon();
 
 	private:
-		string name;
+		std::string name;
 		int level;
-		PkStats stats;
-		PkType type1, type2;
-		PkNature nature;
+		ppe::core::PkStats stats;
+		ppe::core::PkType type1, type2;
+		ppe::core::PkNature nature;
 
 	public:
-		string toString();
+		std::string toString();
 		inline void setStats(PkStats stats) { this->stats = stats; }
 
 	};

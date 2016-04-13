@@ -1,11 +1,14 @@
 #include <iostream>
+#include <string>
 #include <fstream>
 
 #include "../../include/core/PokemonManager.h"
 #include "../../include/core/Pokemon.h"
 
 using std::ifstream;
+using std::string;
 
+using ppe::core::Pokemon;
 using ppe::core::PkType;
 using ppe::core::PkStats;
 using ppe::management::PokemonManager;

@@ -3,7 +3,6 @@
 
 #include <string>
 
-using std::string;
 
 namespace ppe { namespace character {
 
@@ -13,7 +12,7 @@ namespace ppe { namespace character {
 		~Character();
 
 	private:
-		string name;
+		std::string name;
 		bool male;
 		//TODO: BAG
 

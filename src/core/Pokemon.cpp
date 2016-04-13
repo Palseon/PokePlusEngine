@@ -1,6 +1,9 @@
 #include "../../include/core/Pokemon.h"
 #include "../../include/math/Random.h"
 
+using std::string;
+using std::to_string;
+
 using ppe::core::Pokemon;
 using ppe::core::PkType;
 using ppe::core::PkNature;
