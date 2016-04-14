@@ -46,7 +46,7 @@ void PokemonManager::RegisterPokemons(char *file_path) {
 			 >> stats.sp_def
 			 >> stats.speed;
 
-		Pokemon *pk = new Pokemon(name, ParseType(type1), ParseType(type2));
+		Pokemon *pk = new Pokemon(name, ParseString(type1), ParseString(type2));
 		pk->setStats(stats);
 
 		//std::cout << pk->toString() << std::endl;
@@ -56,7 +56,7 @@ void PokemonManager::RegisterPokemons(char *file_path) {
 	}
 }
 
-PkType PokemonManager::ParseType(string type) {
+PkType PokemonManager::ParseString(string type) {
 	if (type == "NONE") return PkType::NONE;
 	if (type == "NORMAL") return PkType::NORMAL;
 	if (type == "FIGHTING") return PkType::FIGHTING;
@@ -76,4 +76,26 @@ PkType PokemonManager::ParseType(string type) {
 	if (type == "DRAGON") return PkType::DRAGON;
 	if (type == "DARK") return PkType::DARK;
 	if (type == "FAIRY") return PkType::FAIRY;
+}
+
+string PokemonManager::ParseType(PkType type) {
+	if (type == PkType::NONE) return "NONE";
+	if (type == PkType::NORMAL) return "NORMAL";
+	if (type == PkType::FIGHTING) return "FIGHTING";
+	if (type == PkType::FLYING) return "FLYING";
+	if (type == PkType::POISON) return "POISON";
+	if (type == PkType::GROUND) return "GROUND";
+	if (type == PkType::ROCK) return "ROCK";
+	if (type == PkType::BUG) return "BUG";
+	if (type == PkType::GHOST) return "GHOST";
+	if (type == PkType::STEEL) return "STEEL";
+	if (type == PkType::FIRE) return "FIRE";
+	if (type == PkType::WATER) return "WATER";
+	if (type == PkType::GRASS) return "GRASS";
+	if (type == PkType::ELECTRIC) return "ELECTRIC";
+	if (type == PkType::PSYCHIC) return "PSYCHIC";
+	if (type == PkType::ICE) return "ICE";
+	if (type == PkType::DRAGON) return "DRAGON";
+	if (type == PkType::DARK) return "DARK";
+	if (type == PkType::FAIRY) return "FAIRY";
 }

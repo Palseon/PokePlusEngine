@@ -17,12 +17,13 @@ namespace ppe { namespace management {
 		inline ppe::core::Pokemon* getPokemonFromID(int id) { return pk_registry[id]; }
 
 		inline int getPokemonCount() { return pk_count; }
+		static std::string ParseType(ppe::core::PkType type);
 
 	private:
 		int pk_count;
 		ppe::core::Pokemon **pk_registry;
 
-		ppe::core::PkType ParseType(std::string type);
+		ppe::core::PkType ParseString(std::string type);
 
 	};
 

@@ -1,4 +1,5 @@
 #include "../../include/core/Pokemon.h"
+#include "../../include/core/PokemonManager.h"
 #include "../../include/math/Random.h"
 
 using std::string;
@@ -7,6 +8,8 @@ using std::to_string;
 using ppe::core::Pokemon;
 using ppe::core::PkType;
 using ppe::core::PkNature;
+
+using ppe::management::PokemonManager;
 
 using ppe_math::GetRandomInt;
 
@@ -35,8 +38,8 @@ Pokemon::~Pokemon() {
 
 string Pokemon::toString() {
 	return ("Name: " + name + "|"
-		+ "Type 1: " + to_string(type1) + "|"
-		+ "Type 2: " + to_string(type2) + "|"
+		+ "Type 1: " + (PokemonManager::ParseType(type1)) + "|"
+		+ "Type 2: " + (PokemonManager::ParseType(type2)) + "|"
 		+ "Nature: " + to_string(nature) + "|"
 		+ "Health: " + to_string(stats.health_points) + "|"
 		+ "Level: " + to_string(level) + "|"
